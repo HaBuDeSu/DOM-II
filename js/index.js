@@ -11,7 +11,7 @@ const destinationImage  = document.querySelector(".content-destination img");
 const text = document.querySelectorAll("p");
 
 navItems.forEach(navItem => navItem.addEventListener('mouseover', (event) => {event.target.style.color = 'red'}));
-// .addEventListener('keydown', )
+document.addEventListener('keydown', (event) => {logoHeading.textContent = logoHeading.textContent + event.key});
 document.addEventListener('wheel', (event) => {body.style.backgroundColor = "grey"});
 // .addEventListener('load', )
 signupButton.forEach(button => button.addEventListener('click', (event) => event.target.textContent = "Are you sure?"));
