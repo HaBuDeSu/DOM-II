@@ -12,7 +12,7 @@ const text = document.querySelectorAll("p");
 
 navItems.forEach(navItem => navItem.addEventListener('mouseover', (event) => {event.target.style.color = 'red'}));
 // .addEventListener('keydown', )
-// .addEventListener('wheel', )
+document.addEventListener('wheel', (event) => {body.style.backgroundColor = "grey"});
 // .addEventListener('load', )
 signupButton.forEach(button => button.addEventListener('click', (event) => event.target.textContent = "Are you sure?"));
 // .addEventListener('resize', )
