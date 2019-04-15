@@ -23,3 +23,4 @@ contentPickDivs.forEach(div => div.addEventListener('click', (event) => {event.s
 document.addEventListener('scroll', (event) => {header.style.backgroundColor = "yellow"});
 // .addEventListener('select', )
 text.forEach(paragraph => paragraph.addEventListener('dblclick', (event) => event.target.style.fontFamily = 'Indie Flower'));
+navItems.forEach(navItem => navItem.addEventListener('click', (event) => {event.preventDefault()}));
